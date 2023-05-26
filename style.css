@@ -1,0 +1,79 @@
+/* Estilos personalizados */
+
+/* Animación de desplazamiento suave para los enlaces de navegación */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  padding: 20px;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+  background-image: url("ruta/de/la/imagen.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para los títulos */
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos */
+p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para la sección de nosotros */
+#nosotros .row {
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección de servicios */
+#servicios .row {
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para la navegación activa */
+.navbar-nav .nav-item.active .nav-link {
+  font-weight: bold;
+}
+
+/* Estilos para animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
