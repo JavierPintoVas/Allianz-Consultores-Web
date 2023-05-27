@@ -1,5 +1,11 @@
 /* Estilos personalizados */
 
+/* Colores principales */
+:root {
+  --color-primario: #0e4c75;
+  --color-secundario: #f6f5f5;
+}
+
 /* Animación de desplazamiento suave para los enlaces de navegación */
 html {
   scroll-behavior: smooth;
@@ -8,6 +14,16 @@ html {
 /* Estilos para la barra de navegación */
 .navbar {
   margin-bottom: 20px;
+  background-color: var(--color-primario);
+}
+
+.logo {
+  width: 100px; /* Ajusta el tamaño del logotipo según tus necesidades */
+  height: auto;
+}
+
+.navbar-brand {
+  padding: 0;
 }
 
 /* Estilos para el contenedor principal */
@@ -25,7 +41,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--color-secundario);
   padding: 20px;
   text-align: center;
 }
@@ -35,11 +51,13 @@ h1,
 h2,
 h3 {
   margin-bottom: 20px;
+  color: var(--color-primario);
 }
 
 /* Estilos para los párrafos */
 p {
   margin-bottom: 10px;
+  color: var(--color-primario);
 }
 
 /* Estilos para la sección de nosotros */
