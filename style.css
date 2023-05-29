@@ -95,3 +95,16 @@ p {
   animation-name: fadeIn;
   animation-duration: 1s;
 }
+
+.nav-pills .nav-link {
+  cursor: pointer;
+}
+
+.nav-pills .nav-link.active {
+  font-weight: bold;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
