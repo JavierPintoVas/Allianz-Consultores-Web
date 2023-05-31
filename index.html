@@ -3,20 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Allianz Consultores Corporativos S.A.S.</title>
+    <title>Allianz Consultores Corporativos</title>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <style>
-      /* Estilos adicionales personalizados */
-      /* Agrega tus estilos CSS personalizados aquí */
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Allianz Consultores</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Allianz Consultores Corporativos</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -30,117 +27,100 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#informacion">Información Básica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Servicios</a>
+            <a class="nav-link" href="#areas">Áreas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team">Equipo</a>
+            <a class="nav-link" href="#equipo">Equipo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacto</a>
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portafolio">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formulario">Formulario</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <header class="jumbotron jumbotron-fluid">
-      <div class="container text-center">
-        <h1 class="display-4">Allianz Consultores Corporativos S.A.S.</h1>
-        <p class="lead">
-          Especialistas en consultoría estratégica en las áreas jurídica,
-          contable y financiera
-        </p>
-        <a class="btn btn-primary btn-lg" href="#contact" role="button"
-          >Contáctanos</a
-        >
-      </div>
-    </header>
-
-    <section id="services" class="py-5">
+    <!-- We are -->
+    <section
+      id="informacion"
+      class="bg-image py-5"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+      "
+    >
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Área Jurídica</h2>
-            <ul>
-              <li>
-                Representación de intereses de las partes ante tribunales y
-                órganos judiciales.
-              </li>
-              <li>
-                Asesoramiento y representación en procedimientos civiles y
-                penales.
-              </li>
-              <!-- Agrega el resto de los servicios del área jurídica -->
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2>Área Contable y Financiera</h2>
-            <ul>
-              <li>Registro contable de transacciones comerciales.</li>
-              <li>Auditoría y preparación de estados financieros.</li>
-              <!-- Agrega el resto de los servicios del área contable y financiera -->
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2>Área de Gestión</h2>
-            <ul>
-              <li>
-                Asesoría y asistencia operacional en temas de gestión
-                estratégica.
-              </li>
-              <li>
-                Relaciones públicas, comunicaciones y actividades promocionales.
-              </li>
-              <!-- Agrega el resto de los servicios del área de gestión -->
-            </ul>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card border-0 shadow p-4">
+              <h3 class="text-center mb-4">We Are</h3>
+              <p>
+                Allianz Consultores Corporativos S.A.S. es una firma de
+                consultoría estratégica especializada en las áreas jurídica,
+                contable y financiera. Nuestra misión es implementar soluciones
+                corporativas efectivas que contribuyan al desarrollo y éxito de
+                nuestros clientes.
+              </p>
+              <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1011&q=80"
+                alt="Imagen"
+                class="rounded d-block"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="team" class="bg-light py-5">
+    <!-- Áreas -->
+    <section id="areas" class="mt-5">
       <div class="container">
-        <h2 class="text-center mb-4">Nuestro Equipo</h2>
+        <h3>Áreas</h3>
         <div class="row">
           <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="img/person1.jpg"
-                class="card-img-top"
-                alt="Nombre del miembro del equipo 1"
-              />
+            <div class="card text-center">
               <div class="card-body">
-                <h5 class="card-title">Nombre del miembro del equipo 1</h5>
-                <p class="card-text">Cargo del miembro del equipo 1</p>
+                <i class="fas fa-gavel fa-3x mb-3"></i>
+                <h5 class="card-title">Área Jurídica</h5>
+                <p class="card-text">
+                  Nuestra área jurídica se encarga de brindar asesoría legal
+                  especializada a nuestros clientes en temas relacionados con
+                  contratos, regulaciones y litigios.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="img/person2.jpg"
-                class="card-img-top"
-                alt="Nombre del miembro del equipo 2"
-              />
+            <div class="card text-center">
               <div class="card-body">
-                <h5 class="card-title">Nombre del miembro del equipo 2</h5>
-                <p class="card-text">Cargo del miembro del equipo 2</p>
+                <i class="fas fa-calculator fa-3x mb-3"></i>
+                <h5 class="card-title">Área Contable y Financiera</h5>
+                <p class="card-text">
+                  En el área contable y financiera, ofrecemos servicios de
+                  auditoría, gestión de impuestos y asesoramiento financiero
+                  para garantizar el éxito económico de nuestros clientes.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="img/person3.jpg"
-                class="card-img-top"
-                alt="Nombre del miembro del equipo 3"
-              />
+            <div class="card text-center">
               <div class="card-body">
-                <h5 class="card-title">Nombre del miembro del equipo 3</h5>
-                <p class="card-text">Cargo del miembro del equipo 3</p>
+                <i class="fas fa-chart-bar fa-3x mb-3"></i>
+                <h5 class="card-title">Área de Gestión</h5>
+                <p class="card-text">
+                  Nuestro equipo de gestión se dedica a optimizar los procesos
+                  internos y la toma de decisiones estratégicas para impulsar el
+                  crecimiento y desarrollo de nuestros clientes.
+                </p>
               </div>
             </div>
           </div>
@@ -148,62 +128,281 @@
       </div>
     </section>
 
-    <section id="contact" class="py-5">
+    <!-- Equipo -->
+    <section id="equipo" class="mt-5">
       <div class="container">
-        <h2 class="text-center mb-4">Contáctanos</h2>
+        <h3>Equipo</h3>
         <div class="row">
-          <div class="col-md-6 mx-auto">
-            <form>
-              <div class="form-group">
-                <label for="name">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Nombre completo"
-                  required
-                />
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img
+                src="https://i.blogs.es/66b2a4/photo-1511367461989-f85a21fda167/1366_2000.jpeg"
+                class="card-img-top"
+                alt="Imagen Miembro del Equipo 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">:Vladimir Ocampo Martinez</h5>
+                <p class="card-text">Director General (CEO), Abogado</p>
               </div>
-              <div class="form-group">
-                <label for="email">Correo electrónico</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="correo@example.com"
-                  required
-                />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img
+                src="https://i.blogs.es/66b2a4/photo-1511367461989-f85a21fda167/1366_2000.jpeg"
+                class="card-img-top"
+                alt="Imagen Miembro del Equipo 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marisol Barrero Herrera</h5>
+                <p class="card-text">Directora Financiera (CFO), Contadora</p>
               </div>
-              <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  placeholder="Escribe tu mensaje"
-                  required
-                ></textarea>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <img
+                src="https://i.blogs.es/66b2a4/photo-1511367461989-f85a21fda167/1366_2000.jpeg"
+                class="card-img-top"
+                alt="Imagen Miembro del Equipo 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">James Augusto Valencia</h5>
+                <p class="card-text">Director Comercial (CCO), Economista</p>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                Enviar mensaje
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-dark text-white py-3">
-      <div class="container text-center">
-        <p>
-          Todos los derechos reservados &copy; 2023 Allianz Consultores
-          Corporativos S.A.S.
-        </p>
+    <!-- Experiencia -->
+    <section id="experiencia" class="mt-5">
+      <div class="container">
+        <div class="card mx-auto">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="card-body">
+                <h3 class="card-title">Experiencia</h3>
+                <p class="card-text">
+                  Allianz Consultores cuenta con un equipo de profesionales
+                  destacados en sus áreas de práctica, con experiencia tanto en
+                  el sector público como en el privado. Han dejado huella en la
+                  construcción de estrategias efectivas en pro de los objetivos
+                  de cada organización.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <img
+                src="https://images.unsplash.com/photo-1460472178825-e5240623afd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+                class="card-img"
+                alt="Imagen de Experiencia"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Portafolio -->
+    <section id="portafolio" class="mt-5">
+      <div class="container">
+        <h3>Portafolio</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_1.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Descripción del proyecto 1.</p>
+                <a href="enlace_proyecto_1.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_2.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 2</h5>
+                <p class="card-text">Descripción del proyecto 2.</p>
+                <a href="enlace_proyecto_2.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_3.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Descripción del proyecto 3.</p>
+                <a href="enlace_proyecto_3.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_4.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 4</h5>
+                <p class="card-text">Descripción del proyecto 4.</p>
+                <a href="enlace_proyecto_4.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_5.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 5</h5>
+                <p class="card-text">Descripción del proyecto 5.</p>
+                <a href="enlace_proyecto_5.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_6.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 6</h5>
+                <p class="card-text">Descripción del proyecto 6.</p>
+                <a href="enlace_proyecto_6.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_7.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 7"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 7</h5>
+                <p class="card-text">Descripción del proyecto 7.</p>
+                <a href="enlace_proyecto_7.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="ruta_imagen_8.jpg"
+                class="card-img-top"
+                alt="Imagen del proyecto 8"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 8</h5>
+                <p class="card-text">Descripción del proyecto 8.</p>
+                <a href="enlace_proyecto_8.html" class="btn btn-primary"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="mt-5">
+      <div class="container">
+        <h3>Contacto</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card shadow">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      placeholder="Ingrese su nombre"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="correo"
+                      placeholder="Ingrese su correo electrónico"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefono"
+                      placeholder="Ingrese su número de teléfono"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      rows="5"
+                      placeholder="Escriba su mensaje"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
