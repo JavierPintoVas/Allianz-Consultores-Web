@@ -75,3 +75,15 @@ p {
 #informacion {
   margin-top: 100px;
 }
+
+#mision {
+  margin-top: 100px;
+}
+
+#equipo2 {
+  margin-bottom: 50px;
+}
+
+ul {
+  text-align: start !important;
+}
