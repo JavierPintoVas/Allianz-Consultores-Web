@@ -87,3 +87,14 @@ p {
 ul {
   text-align: start !important;
 }
+
+.ul-space {
+  padding-top: 0px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#informacion-portafolio {
+  height: 200px;
+}
