@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Estilos personalizados */
 
@@ -11,13 +11,11 @@
 /* Animación de desplazamiento suave para los enlaces de navegación */
 html {
   scroll-behavior: smooth;
-  font-family: "Playfair Display", serif;
-  font-size: 700;
 }
 
 body {
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
 }
 
 /* Estilos para la barra de navegación */
@@ -31,39 +29,28 @@ body {
   background-size: cover;
 }
 
-.logo {
-  width: 100px; /* Ajusta el tamaño del logotipo según tus necesidades */
-  height: auto;
-}
-
-.navbar-brand {
-  padding: 0;
-}
-
-/* Estilos para el contenedor principal */
-.container {
-  padding: 20px;
-}
-
-/* Estilos para la sección de inicio */
-#inicio {
-  background-image: url("ruta/de/la/imagen.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+.logo-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: var(--color-secundario);
-  padding: 20px;
-  text-align: center;
+}
+
+.logo {
+  width: 85px; /* Ajusta el tamaño del logo según tus necesidades */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(
+    1.1
+  ); /* Ajusta la escala de la animación al poner el mouse encima */
 }
 
 /* Estilos para los títulos */
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   margin-bottom: 20px;
   color: var(--color-primario);
   font-weight: 900;
@@ -75,51 +62,11 @@ p {
   color: var(--color-primario);
 }
 
-/* Estilos para la sección de nosotros */
-#nosotros .row {
-  margin-bottom: 20px;
-}
-
-/* Estilos para la sección de servicios */
-#servicios .row {
-  margin-bottom: 20px;
-}
-
-/* Estilos para la sección de contacto */
-#contacto {
-  padding: 20px;
-  text-align: center;
-}
-
 /* Estilos para la navegación activa */
 .navbar-nav .nav-item.active .nav-link {
   font-weight: bold;
 }
 
-/* Estilos para animaciones */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-}
-
-.nav-pills .nav-link {
-  cursor: pointer;
-}
-
-.nav-pills .nav-link.active {
-  font-weight: bold;
-}
-
-.tab-content {
-  border-left: 1px solid #ddd;
-  padding-left: 20px;
+#informacion {
+  margin-top: 100px;
 }
